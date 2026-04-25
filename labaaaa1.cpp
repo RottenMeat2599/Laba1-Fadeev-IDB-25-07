@@ -65,7 +65,7 @@ void bubble_sort(int arr[], int size) {
 
 void fill_array(int arr[], int size) {
     for (int i = 0; i < size; i++) {
-        arr[i] = rand() % 10000;
+        arr[i] = rand() % 10001;
     }
 }
 
@@ -88,8 +88,8 @@ int main() {
         find_element(arr, n, 5000);
         auto end = high_resolution_clock::now();
 
-        duration<double> duration = end - start;
-        cout << n << " - " << duration.count() << " сек" << endl;
+        duration<double> duration_ = end - start;
+        cout << n << " - " << duration_.count() << " сек" << endl;
 
         delete[] arr;
     }
@@ -105,8 +105,8 @@ int main() {
         find_second_max(arr, n);
         auto end = high_resolution_clock::now();
 
-        duration<double> duration = end - start;
-        cout << n << " - " << duration.count() << " сек" << endl;
+        duration<double> duration_ = end - start;
+        cout << n << " - " << duration_.count() << " сек" << endl;
 
         delete[] arr;
     }
@@ -124,8 +124,8 @@ int main() {
         binary_search(arr, n, 5000);
         auto end = high_resolution_clock::now();
 
-        duration<double> duration = end - start;
-        cout << n << " - " << duration.count() << " сек" << endl;
+        duration<double> duration_ = end - start;
+        cout << n << " - " << duration_.count() << " сек" << endl;
 
         delete[] arr;
     }
@@ -142,8 +142,8 @@ int main() {
         multipl_table(n);
         auto end = high_resolution_clock::now();
 
-        duration<double> duration = end - start;
-        cout << n << " - " << duration.count() << " сек" << endl;
+        duration<double> duration_ = end - start;
+        cout << n << " - " << duration_.count() << " сек" << endl;
     }
     cout << endl;
 
@@ -157,8 +157,8 @@ int main() {
         bubble_sort(arr, n);
         auto end = high_resolution_clock::now();
 
-        duration<double> duration = end - start;
-        cout << n << " - " << duration.count() << " сек" << endl;
+        duration<double> duration_ = end - start;
+        cout << n << " - " << duration_.count() << " сек" << endl;
 
         delete[] arr;
     }
