@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <chrono>
 #include <cstdlib>
 #include <ctime>
@@ -63,7 +63,7 @@ void bubble_sort(int arr[], int size) {
     }
 }
 
-void generate_array(int arr[], int size) {
+void fill_array(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         arr[i] = rand() % 10001;
     }
@@ -76,13 +76,13 @@ int main() {
     int sizes[] = { 1000, 5000, 10000, 50000 };
     int num_sizes = 4;
 
-  
+
 
     cout << "Линейный поиск" << endl;
     for (int i = 0; i < num_sizes; i++) {
         int n = sizes[i];
         int* arr = new int[n];
-        generate_array(arr, n);
+        fill_array(arr, n);
 
         auto start = high_resolution_clock::now();
         find_element(arr, n, 5000);
@@ -99,7 +99,7 @@ int main() {
     for (int i = 0; i < num_sizes; i++) {
         int n = sizes[i];
         int* arr = new int[n];
-        generate_array(arr, n);
+        fill_array(arr, n);
 
         auto start = high_resolution_clock::now();
         find_second_max(arr, n);
@@ -116,7 +116,7 @@ int main() {
     for (int i = 0; i < num_sizes; i++) {
         int n = sizes[i];
         int* arr = new int[n];
-        generate_array(arr, n);
+        fill_array(arr, n);
 
         bubble_sort(arr, n);
 
@@ -151,7 +151,7 @@ int main() {
     for (int i = 0; i < num_sizes; i++) {
         int n = sizes[i];
         int* arr = new int[n];
-        generate_array(arr, n);
+        fill_array(arr, n);
 
         auto start = high_resolution_clock::now();
         bubble_sort(arr, n);
