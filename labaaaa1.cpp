@@ -15,8 +15,8 @@ bool find_element(int arr[], int size, int target) {
 }
 
 int find_second_max(int arr[], int size) {
-    int max1 = arr[0];
-    int max2 = arr[0];
+    int max1 = 0;
+    int max2 = 0;
 
     for (int i = 0; i < size; i++) {
         if (arr[i] > max1) {
