@@ -2,7 +2,6 @@
 #include <chrono>
 #include <cstdlib>
 #include <ctime>
-#include <clocale>
 
 using namespace std;
 using namespace chrono;
